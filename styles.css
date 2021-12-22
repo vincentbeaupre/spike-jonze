@@ -4,18 +4,24 @@ body {
 
 p {
   font-size: 1.5vw;
-  line-height: 1.2;
+  line-height: 1.5;
+  padding: 2vw;
 }
 
 a {
   text-decoration: none;
 }
 
-table {
+table, td {
   width: 80%;
   margin: auto;
   border: 2px solid black;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 1vw;
 }
+
+
 
 #title {
 display: flex;
@@ -25,8 +31,6 @@ justify-content: center;
 text-align: center;
 font-size: 2vw;
 }
-
-
 
 .home {
   background-color: white;
@@ -185,6 +189,7 @@ font-size: 2vw;
   grid-gap: 10px;
   width: 80%;
   margin: auto;
+  padding: 4vh;
 }
 
 .grid-container > div {
@@ -252,14 +257,12 @@ font-size: 2vw;
   background: url('images/drop.jpg');
   background-size: cover;
   background-position: center;
-
 }
 
 .music .grid-container > div:nth-of-type(3) {
   background: url('images/sabotage.jpg');
   background-size: cover;
   background-position: center;
-
 }
 
 .music .grid-container > div:nth-of-type(4) {
@@ -287,14 +290,12 @@ font-size: 2vw;
   background: url('images/her.jpg');
   background-size: cover;
   background-position: center;
-
 }
 
 .films .grid-container > div:nth-of-type(3) {
   background: url('images/being-john-malkovich.jpg');
   background-size: cover;
   background-position: center;
-
 }
 
 .films .grid-container > div:nth-of-type(4) {
@@ -307,4 +308,38 @@ font-size: 2vw;
   background: url('images/adaption.jpeg');
   background-size: cover;
   background-position: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.bio > div > p {
+  margin: auto;
+  width: 80%;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.bio > div > img {
+  width: 40vw;
+  padding: 4vw;
+}
+
+.bio > div > p > a {
+  text-decoration: underline;
+  color: black;
+}
+
+.bio > div > p > a:hover {
+  color: rgb(228, 32, 32);
+}
+
+.bio > div > iframe {
+  padding: 5vw;
+  width: 840px;
+  height: 472px;
 }
